@@ -6,9 +6,12 @@
     <Nullable>enable</Nullable>
     <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
     <StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
+    <ApplicationInsightsResourceId>/subscriptions/2091e0ab-9191-46c4-a758-5ef4a41d3d11/resourceGroups/AzureBlazorWebApp/providers/microsoft.insights/components/AzureBlazorWebAppInsight</ApplicationInsightsResourceId>
+    <UserSecretsId>859c1810-e361-4648-910a-0f712efffd07</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
   </ItemGroup>
 

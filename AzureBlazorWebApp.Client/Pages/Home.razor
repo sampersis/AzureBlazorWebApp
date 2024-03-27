@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject IConfiguration configuration;
 
 <PageTitle>Home</PageTitle>
 
@@ -26,3 +27,11 @@ The p element defines a paragraph in an HTML document.
 
 The div element defines a division or a section in an HTML document.
 </p>
+
+@{
+    if (!string.IsNullOrEmpty(@configuration["Greeting"]))
+    {
+        <p>@configuration["Greeting"]</p>
+    }
+}
+
